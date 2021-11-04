@@ -20,3 +20,18 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::resource('citas', 'CitasController');
+
+
+Route::resource('citasdetalles', 'CitasdetalleController');
+
+
+Route::resource('doctors', 'DoctorController');
+
+
+Route::resource('pacientes', 'PacienteController');
+
+
+Route::resource('usuarios', 'UsuarioController');
